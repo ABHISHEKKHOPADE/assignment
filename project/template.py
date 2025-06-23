@@ -7,6 +7,8 @@ list_of_files = [
 
     f"{project_name}/data",
     f"{project_name}/analysis.ipynb",
+
+    
     f"{project_name}/sentiment_trade_analysis.py",  
     
     
