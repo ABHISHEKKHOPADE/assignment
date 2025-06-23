@@ -1,0 +1,49 @@
+
+Data Preprocessing and Visualization Report
+===========================================
+
+1. Libraries Used:
+------------------
+- pandas: Data manipulation and analysis
+- numpy: Numerical computing
+- seaborn & matplotlib: Visualization
+- sklearn.preprocessing.StandardScaler: Feature scaling
+
+2. Data Loading:
+----------------
+- Loaded 'historical_data.csv' as trade_df
+- Loaded 'fear_greed_index.csv' as sentiment_df
+
+3. Timestamp Conversion:
+------------------------
+- Converted 'Timestamp' in trade_df from milliseconds to datetime
+- Converted 'timestamp' in sentiment_df from seconds to datetime
+- Extracted 'date' from both for merging and analysis
+
+4. Missing Value Handling:
+--------------------------
+- Checked for missing values in both datasets
+- Dropped missing entries if any
+
+5. Summary Statistics:
+----------------------
+- Descriptive statistics computed using describe() for both datasets
+
+6. Visualizations:
+------------------
+- Histogram: Distribution of sentiment 'value' with KDE
+- Bar Plot: Count of each sentiment 'classification'
+- Line Plot: Execution price over time in trade data
+- Correlation Heatmap: Numeric features in trade_df
+
+7. Data Merging:
+----------------
+- Merged trade_df and sentiment_df on 'date'
+- Columns retained: Execution Price, sentiment value, and classification
+
+8. Price vs Sentiment:
+----------------------
+- Scatter plot showing relationship between Execution Price and Sentiment Value
+- Colored by sentiment classification
+
+End of Report.

@@ -1,0 +1,43 @@
+
+ Conclusion Report: Market Sentiment & Trade Behavior Analysis
+
+ Objective:
+To explore the relationship between trader performance and market sentiment using historical trading data and Fear & Greed Index sentiment scores.
+
+ 1. Data Preprocessing Summary
+
+- Trade Data (historical_data.csv)
+  - Handled timestamp conversion from milliseconds to datetime.
+  - Cleaned and converted numeric columns like Execution Price, Size USD, Fee, and Closed PnL.
+  - Removed duplicate rows and handled missing values (if any).
+  - Verified data types for compatibility with analysis tools.
+
+- Sentiment Data (fear_greed_index.csv)
+  - Converted UNIX timestamp (in seconds) to datetime format.
+  - Grouped classification into categories like Extreme Fear, Fear, Neutral, Greed, and Extreme Greed.
+  - Checked for imbalances in sentiment classes and standardized sentiment values.
+
+ 2. Exploratory Data Analysis & Visualization
+
+- Trade Data Insights:
+  - Distribution plots for Execution Price, Size USD, and Closed PnL revealed skewed behavior with outliers.
+  - Strong concentration of trades with zero or negative PnL.
+  - Clustering with KMeans on standardized trade metrics revealed distinct trade behavior segments.
+
+- Sentiment Insights:
+  - Time series plot shows the oscillation between greed and fear sentiment over time.
+  - Boxplots and bar charts show how sentiment classifications relate to sentiment values.
+
+- Merged Analysis:
+  - Merged sentiment and trade data on timestamp for contextual analysis.
+  - Found that larger trade sizes and high fees often occurred during "Greed" phases.
+  - Volatility in Closed PnL also showed variation with sentiment phases.
+
+ 3. Key Takeaways
+
+- Trade Size & Sentiment:
+  - Higher trade volumes and higher average fees tend to occur during "Greed" or "Extreme Greed" phases, suggesting more aggressive trading.
+
+- PnL Behavior:
+  - During "Fear" periods, most trades have near-zero or negative PnL, indicating lower market confidence and profitability.
+
