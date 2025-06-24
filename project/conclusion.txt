@@ -2,9 +2,10 @@
  Conclusion Report: Market Sentiment & Trade Behavior Analysis
 
  Objective:
+ The objective of this assignment is :
 To explore the relationship between trader performance and market sentiment using historical trading data and Fear & Greed Index sentiment scores.
 
- 1. Data Preprocessing Summary
+ 1. Data Preprocessing
 
 - Trade Data (historical_data.csv)
   - Handled timestamp conversion from milliseconds to datetime.
@@ -33,7 +34,7 @@ To explore the relationship between trader performance and market sentiment usin
   - Found that larger trade sizes and high fees often occurred during "Greed" phases.
   - Volatility in Closed PnL also showed variation with sentiment phases.
 
- 3. Key Takeaways
+ 3. main Conclusion
 
 - Trade Size & Sentiment:
   - Higher trade volumes and higher average fees tend to occur during "Greed" or "Extreme Greed" phases, suggesting more aggressive trading.
